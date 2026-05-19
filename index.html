@@ -4,82 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>João Moreno Advocacia</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Advocacia especializada em Direito Público para professores da rede estadual de SP. Atendimento em todo o estado.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <div class="container">
-    <img src="img/logo.jpeg" alt="Logo João Moreno" class="logo">
-    <a href="http://wa.me/5517997016135" class="btn-whatsapp">Fale pelo WhatsApp</a>
+  <div class="container nav">
+    <div class="logo">JM Advocacia</div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#areas">Áreas</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="http://wa.me/5517997016135" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
   </div>
 </header>
 
-<section class="hero">
+<section id="inicio" class="hero">
   <div class="container">
     <h1>Advocacia Especializada em Direito Público</h1>
     <p>Defendendo professores da rede pública em todo o Estado de São Paulo.</p>
-    <a href="http://wa.me/5517997016135" class="btn-primary">Solicitar Atendimento</a>
+
+    <a href="http://wa.me/5517997016135" class="btn-primary">
+      <i class="fab fa-whatsapp"></i> Falar com um especialista
+    </a>
   </div>
 </section>
 
-<section class="sobre">
+<section class="autoridade">
+  <div class="container grid-3">
+    <div class="card">
+      <h3>Atuação Estadual</h3>
+      <p>Atendimento em todo o Estado de São Paulo</p>
+    </div>
+    <div class="card">
+      <h3>Especialização</h3>
+      <p>Foco exclusivo em professores da rede pública</p>
+    </div>
+    <div class="card">
+      <h3>Atendimento Direto</h3>
+      <p>Contato direto com advogado especialista</p>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
   <div class="container">
     <h2>Sobre o Escritório</h2>
     <p>
-      Escritório especializado em Direito Público, com atuação focada na defesa dos direitos
-      dos professores da rede estadual de ensino. Atendimento em todo o Estado de São Paulo.
+      Escritório especializado em Direito Público, atuando na defesa dos direitos dos professores da rede estadual de ensino, com atendimento em todo o Estado de São Paulo.
     </p>
+
     <p><strong>OAB/SP:</strong> 358.141</p>
-    <a href="https://www2.oabsp.org.br/asp/consultainscritos/consulta01.asp" target="_blank">Consultar na OAB</a>
+
+    <a href="https://www2.oabsp.org.br/asp/consultainscritos/consulta01.asp" target="_blank">
+      Consultar na OAB
+    </a>
   </div>
 </section>
 
-<section class="areas">
+<section id="areas">
   <div class="container">
     <h2>Áreas de Atuação</h2>
-    <ul>
-      <li>Recálculo de quinquênios e sexta-parte</li>
-      <li>Recálculo da GDPI</li>
-      <li>Descontos indevidos sobre GDPI</li>
-      <li>Irredutibilidade de vencimentos</li>
-      <li>Recálculo de carga suplementar</li>
-      <li>Restituição de imposto de renda (Fundeb/Bonificação)</li>
-      <li>Licença-prêmio em pecúnia</li>
-      <li>Cessação de descontos IAMSP</li>
-      <li>Isenção de IR por doença grave</li>
+
+    <ul class="areas-list">
+      <li><i class="fas fa-check-circle"></i> Recálculo de quinquênios e sexta-parte</li>
+      <li><i class="fas fa-check-circle"></i> Recálculo da GDPI</li>
+      <li><i class="fas fa-check-circle"></i> Descontos indevidos sobre GDPI</li>
+      <li><i class="fas fa-check-circle"></i> Irredutibilidade de vencimentos</li>
+      <li><i class="fas fa-check-circle"></i> Recálculo de carga suplementar</li>
+      <li><i class="fas fa-check-circle"></i> Restituição de imposto de renda</li>
+      <li><i class="fas fa-check-circle"></i> Licença-prêmio em pecúnia</li>
+      <li><i class="fas fa-check-circle"></i> Cessação de descontos IAMSP</li>
+      <li><i class="fas fa-check-circle"></i> Isenção de IR por doença grave</li>
     </ul>
-    <a href="http://wa.me/5517997016135" class="btn-primary">Falar com Especialista</a>
+
+    <a href="http://wa.me/5517997016135" class="btn-primary">
+      Falar com especialista
+    </a>
   </div>
 </section>
 
-<section class="equipe">
+<section id="equipe">
   <div class="container">
     <h2>Nossa Equipe</h2>
 
     <div class="cards">
       <div class="card">
-        <img src="img/joao.png">
+        <div class="photo"></div>
         <h3>João Eduardo Moreno</h3>
         <p>Advogado Fundador</p>
         <span>OAB/SP 358.141</span>
       </div>
 
       <div class="card">
-        <img src="img/carlos.jpg">
+        <div class="photo"></div>
         <h3>Carlos Henrique dos Santos</h3>
         <p>Advogado</p>
         <span>OAB/SP 492.210</span>
       </div>
 
       <div class="card">
-        <img src="img/danieli.jpg">
+        <div class="photo"></div>
         <h3>Danieli Cristina Moreno</h3>
         <p>Assistente Jurídico</p>
       </div>
 
       <div class="card">
-        <img src="img/laura.jpg">
+        <div class="photo"></div>
         <h3>Laura Silva Conte</h3>
         <p>Auxiliar Jurídico</p>
       </div>
@@ -87,21 +136,33 @@
   </div>
 </section>
 
-<section class="contato">
+<section id="contato">
   <div class="container">
-    <h2>Entre em Contato</h2>
-    <p>Atendimento rápido e direto via WhatsApp.</p>
-    
-    <a href="http://wa.me/5517997016135" class="btn-primary">Chamar no WhatsApp</a>
-    
-    <p>Telefone: (17) 99701-6135</p>
-    <a href="https://www.instagram.com/joaomorenoadv" target="_blank">Instagram</a>
+    <h2>Contato</h2>
+
+    <p>Fale agora com um advogado especialista e tire suas dúvidas sem compromisso.</p>
+
+    <a href="http://wa.me/5517997016135" class="btn-primary big">
+      <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+    </a>
+
+    <p>(17) 99701-6135</p>
+
+    <a href="https://www.instagram.com/joaomorenoadv" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 João Moreno Advocacia - Todos os direitos reservados</p>
+  <p>© 2026 João Moreno Advocacia</p>
 </footer>
+
+<a href="http://wa.me/5517997016135" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
