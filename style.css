@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1a20;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background: #0c1419;
+  padding: 15px 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(#0f1a20, #16262e);
+}
+
+h1, h2 {
+  color: #d4af37;
+}
+
+.btn-primary, .btn-whatsapp {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background: #d4af37;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.areas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.areas li {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #16262e;
+  padding: 20px;
+  flex: 1 1 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0c1419;
+}
+
+/* Responsivo */
+@media(max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
